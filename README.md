@@ -26,7 +26,7 @@ Install the required python-nmap library via pip:
 ```
 **(Incase that didn't work on Linux try this method)**
 
-**Installation For Linux(Debian/Ubuntu/Kali)**
+## **Installation For Linux(Debian/Ubuntu/Kali)**
 1. Install Nmap
 ```bash
   sudo apt update
@@ -43,7 +43,7 @@ source venv/bin/activate
 # Install the library
 pip install python-nmap
 ```
-**Usage**
+## **Usage**
 1. Navigate to the project directory.
 2. Run the script with sudo (required for stealth scan and OS detection):
 ```bash
@@ -55,7 +55,7 @@ pip install python-nmap
 If you run it without sudo, you will get a "You requested a scan type which requires root privileges" error.**
 
 
-**How to Use**
+## **How to Use**
 1. Clone or download this repository to your local machine.
 
 2. Open your terminal or command prompt and navigate to the project directory.
