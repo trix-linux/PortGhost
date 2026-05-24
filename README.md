@@ -24,7 +24,38 @@ Install the required python-nmap library via pip:
 ```bash
   pip install python-nmap
 ```
-How to Use
+**(Incase that didn't work on Linux try this method)**
+
+**Installation For Linux(Debian/Ubuntu/Kali)**
+1. Install Nmap
+```bash
+  sudo apt update
+  sudo apt install nmap -y
+```
+2. Install python-nmap (Recommended)
+```bash 
+# Create a virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate
+
+# Install the library
+pip install python-nmap
+```
+**Usage**
+1. Navigate to the project directory.
+2. Run the script with sudo (required for stealth scan and OS detection):
+```bash
+  sudo venv/bin/python3 PortGhost.py
+```
+3. Enter the target IP address when prompted.
+
+**Note: The script requires root privileges because it uses -sS (SYN scan) and -O (OS detection).
+If you run it without sudo, you will get a "You requested a scan type which requires root privileges" error.**
+
+
+**How to Use**
 1. Clone or download this repository to your local machine.
 
 2. Open your terminal or command prompt and navigate to the project directory.
